@@ -23,60 +23,60 @@ a{color:#d8e8ff}button{font:inherit;cursor:pointer}
 /* Новый дизайн сайта */
 body {
   background:
-    linear-gradient(rgba(5, 8, 25, 0.72), rgba(5, 8, 25, 0.88)),
+    linear-gradient (rgba (5, 8, 25, 0.72), rgba (5, 8, 25, 0.88)),
     url("./background.png") center center / cover fixed no-repeat;
   background-color: #070b1c;
   color: #f4f4ff;
 }
 
 .chat-panel {
-  display: none !important;
+  display: none ! important;
 }
 
 .layout {
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 30%);
-  gap: 24px;
-  max-width: 1500px;
-  margin: 24px auto;
+  grid-template-columns: minmax (0, 1 fr) minmax (260 px, 30 %);
+  gap: 24 px;
+  max-width: 1500 px;
+  margin: 24 px auto;
 }
 
 .center-column,
 .news-panel {
-  padding: 20px;
-  background: rgba(9, 13, 35, 0.82);
-  border: 1px solid rgba(140, 125, 255, 0.35);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
+  padding: 20 px;
+  background: rgba (9, 13, 35, 0.82);
+  border: 1 x solid rgba (140, 125, 255, 0.35);
+  border-radius: 16 px;
+  backdrop-filter: blur (8 px);
 }
 
 .hero-title {
-  background: linear-gradient(90deg, #8b5cf6, #45e6c5);
+  background: linear-gradient (90 deg, #8b5cf6, #45e6c5);
   color: #080b18;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 28px;
+  border-radius: 8 px;
+  padding: 12 px;
+  font-size: 28 px;
 }
 
 .copy-button {
   background: #8b5cf6;
   color: white;
-  border-radius: 8px;
+  border-radius: 8 px;
 }
 
 .map-frame {
-  border-radius: 14px;
-  border: 1px solid #5544a8;
+  border-radius: 14 px;
+  border: 1 px solid #5544a8;
 }
 
-@media (max-width: 700px) {
+@ media (max-width: 700 px) {
   .layout {
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 12 px;
   }
 
   .center-column,
   .news-panel {
-    padding: 14px;
+    padding: 14 px;
   }
 }
