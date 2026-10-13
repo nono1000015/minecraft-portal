@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>0xMC — Minecraft Server</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/config.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">0xMC</a>
+    <div class="server-meta"><span id="statusDot" class="dot"></span><span id="statusText">Проверяем сервер…</span></div>
+    <button id="copyIp" class="copy-button">Копировать IP</button>
+  </header>
+
+  <main class="layout">
+    <aside class="panel chat-panel">
+      <div class="panel-title"><span>#mc</span><span class="muted">LIVE CHAT</span></div>
+      <p class="hint">Игровой чат и события сервера</p>
+      <div id="chatLog" class="chat-log" aria-live="polite">
+        <div class="system-line">Подключение к ленте событий…</div>
+      </div>
+      <div class="chat-footer">Чат только для чтения · отправка сообщений в игру отключена</div>
+    </aside>
+
+    <section class="center-column">
+      <div class="hero">
+        <div class="hero-title">0xMC</div>
+        <div class="hero-subtitle">Minecraft Server</div>
+        <div class="ip-line">Адрес: <code id="serverAddress">mc.example.net</code></div>
+        <div class="status-line"><span class="hash">#</span> <span id="heroStatus">Проверка статуса…</span></div>
+        <div class="rules">
+          <strong>Добро пожаловать!</strong>
+          <ol>
+            <li>Уважай других игроков</li>
+            <li>Не используй читы</li>
+            <li>Не грифи без разрешения</li>
+            <li>Строй красиво и будь добр</li>
+          </ol>
+        </div>
+      </div>
+      <section class="map-panel">
+        <div class="section-heading"><h2>Карта мира</h2><a id="openMap" href="#" target="_blank" rel="noopener">Открыть отдельно ↗</a></div>
+        <div id="mapFrame" class="map-frame">
+          <div class="map-placeholder">
+            <div class="map-grid"></div>
+            <div class="map-marker">⌖</div>
+            <strong>Карта мира Minecraft</strong>
+            <span>Укажи адрес BlueMap или Dynmap в website/config.js</span>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">Неофициальный сайт игрового сервера · 0xMC</footer>
+    </section>
+
+    <aside class="panel news-panel">
+      <div class="news-heading"><h2>Server News</h2><span class="rss">NEWS</span></div>
+      <div id="newsList" class="news-list"><p class="muted">Загрузка новостей…</p></div>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
